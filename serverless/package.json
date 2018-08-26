@@ -1,0 +1,17 @@
+{
+  "name": "tempature-grafana-data-source",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "aws-sdk": "^2.177.0",
+    "serverless-offline": "^3.25.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "sls offline start"
+  },
+  "author": "",
+  "license": "ISC"
+}

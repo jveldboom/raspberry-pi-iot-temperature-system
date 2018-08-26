@@ -1,0 +1,13 @@
+# package directories
+node_modules
+jspm_packages
+_local/*
+
+.serverless
+
+device/certs/*.pem
+device/certs/*.key
+.DS_Store
+
+.terraform
+*.tfstate*

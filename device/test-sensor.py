@@ -1,0 +1,12 @@
+import Adafruit_DHT, time, json, logging, os
+
+config = {
+    "sensor": Adafruit_DHT.DHT11,
+    "gpioPin": 4,
+}
+
+humidity, temperature = Adafruit_DHT.read_retry(config["sensor"], config["gpioPin"])
+# convert celsius to fahrenheit
+temperature = temperature * 9/5.0 + 32
+        
+print('Temp={0:0.1f}  Humidity={1:0.1f}%'.format(temperature, humidity))
