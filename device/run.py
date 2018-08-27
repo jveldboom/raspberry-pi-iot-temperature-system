@@ -2,11 +2,11 @@ from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTShadowClient
 import Adafruit_DHT, time, json, logging, os
 
 config = {
-    "sensor": Adafruit_DHT.DHT11,
+    "sensor": Adafruit_DHT.AM2302, # Adafruit_DHT.DHT11, Adafruit_DHT.DHT22 or Adafruit_DHT.AM2302
+    "gpioPin": 4, # update to match your config
     "clientId": os.environ["CLIENT_ID"],
     "mqttHost": os.environ["MQTT_HOST"],
     "mqttTopic": "temperature",
-    "gpioPin": 4,
     "defaultState": {
         "reportFrequency": 60,
         "connected": True
