@@ -63,7 +63,7 @@ sudo service supervisor restart
 
 __Add Program to Supervisor__
 ```
-sudo vi /etc/supervisor/conf.d/{PROGRAM_NAME}
+sudo vi /etc/supervisor/conf.d/readtemperature.conf
 
 [program:readtemperature]
 command=python run.py
